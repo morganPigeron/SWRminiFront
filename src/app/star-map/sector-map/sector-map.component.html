@@ -1,4 +1,7 @@
-<div *ngIf="debug" id='debug'>
-  {{ sector.sectorName }} - {{ sector.sectorSize }}
+<div class="window">
+  <div class="title">
+    {{ sector.sectorName }} - {{ sector.sectorSize }}
+  </div>
+  <div #content3d id="content"></div>
 </div>
-<div #content3d id="content"></div>
+

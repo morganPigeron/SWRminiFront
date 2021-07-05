@@ -22,7 +22,6 @@ export class SectorMapComponent implements AfterViewInit {
   @ViewChild('content3d', { static: false }) content3d!: ElementRef;
 
   @Input() sector!: Sector;
-  @Input() debug: boolean = false;
 
   private planets: Entity3D[] = [];
 

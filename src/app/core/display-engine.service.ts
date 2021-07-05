@@ -104,7 +104,7 @@ export class DisplayEngineService {
 
   private update() {
     const deltaTime = this.clock.getDelta();
-    if (deltaTime > 1 / 60)//TODO add setting for framerate
+    //if (deltaTime > (1 / 60))//TODO add setting for framerate
       this.fixedUpdate(deltaTime);
 
     requestAnimationFrame(() => this.update());
@@ -130,7 +130,7 @@ export class DisplayEngineService {
     controls.minDistance = 2;
     controls.maxDistance = 5;
     controls.enablePan = false;
-    controls.enableZoom = false;
+    controls.enableZoom = true;
     scene.userData.controls = controls;
 
     // add one random color to geometry

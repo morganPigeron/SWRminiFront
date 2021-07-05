@@ -1,11 +1,22 @@
-#content {
+.window {
+  border-radius:5px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0px 5px 20px #999;
+}
 
+.window:hover {
+  box-shadow: 0px 5px 20px #12355b;
+}
+
+.title {
+  text-align: center;
+}
+
+#content {
   width: 128px;
   height: 128px;
   z-index: 1;
-  padding: 3em 0 0 0;
-
   box-sizing: border-box;
-
 }
 
